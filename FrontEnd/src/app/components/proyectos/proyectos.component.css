@@ -1,0 +1,30 @@
+.row{
+    /* fallback for old browsers */
+    background: #fbc2eb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
+}
+
+#titulo{
+    text-align: center;
+}
+
+.contenedor{
+    width:auto;
+    margin-top:4em;
+    margin-bottom: 3.5em;
+    text-align:1em;
+    text-align: center;
+}
+
+.parte1, .parte2{
+    display: inline-block;
+}
+
+.img-proyecto{
+    box-shadow: 10px 10px 30px #000000;
+}

@@ -17,19 +17,11 @@ public class ImpPersonaService implements IPersonaService{
         return persona;
     }
 
-    /**
-     *
-     * @param persona
-     */
     @Override
     public void savePersona(Persona persona) {
         ipersonaRepository.save(persona);
     }
 
-    /**
-     *
-     * @param id
-     */
     @Override
     public void deletePersona(Long id) {
         ipersonaRepository.deleteById(id);
@@ -37,7 +29,7 @@ public class ImpPersonaService implements IPersonaService{
 
     @Override
     public Persona findPersona(Long id) {
-        Persona persona = ipersonaRepository.findById(id) .orElse (null) ;
+        Persona persona = ipersonaRepository.findById(id).orElse(null);
         return persona;
     }
     

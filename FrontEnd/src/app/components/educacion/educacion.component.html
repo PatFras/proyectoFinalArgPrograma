@@ -1,18 +1,27 @@
-  <div class="row">
-    <h1 id="titulo">Educación</h1>
-      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
-        <ngb-panel title="Cursos">
-          <ng-template ngbPanelContent>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit!
-          </ng-template>
-        </ngb-panel>
+<div class="row">
+  <h1 id="titulo">Educación</h1>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+      Agregar Educación
+    </button>
+  </div>
 
-        <ngb-panel>
-          <ng-template ngbPanelTitle><span>Estudios Primarios/Secundarios</span></ng-template>
-          <ng-template ngbPanelContent>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit!
-          </ng-template>
-        </ngb-panel>
-      </ngb-accordion>
-</div>    
+  <div class="col-lg-1 col-md-1 col-sm-1"></div>
+  <div class="col-lg-11 col-md-11 col-sm-11">
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let Educacion of educacion">
+        <td><h2>{{Educacion.nombreE}}</h2></td>
+        <td>{{Educacion.descripcionE}}</td>
+        <td *ngIf="isLogged">
+          <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">EDITAR</button>
+        </td> 
+        <td *ngIf="isLogged">
+          <button class="btn btn-danger" (click)="delete(Educacion.id)">BORRAR</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
+</div>   

@@ -1,7 +1,7 @@
-import { TokenService } from "./token.service";
-import { Observable } from "rxjs";
 import { HttpEvent, HttpHandler, HttpRequest, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
+import { TokenService } from "./token.service";
 
 @Injectable({
     providedIn: 'root'
@@ -14,7 +14,7 @@ export class InterceptorService {
         const token = this.tokenService.getToken();
         if(token != null){
             intReq = req.clone({
-                headers: req.headers.set('Authorization', 'Bearer' + token)
+                headers: req.headers.set('Authorization','Bearer'+token)
             });
         }
         return next.handle(intReq);
@@ -24,5 +24,4 @@ export class InterceptorService {
 export const interceptorProvider = [{
     provide: HTTP_INTERCEPTORS,
     useClass: InterceptorService,
-    multi: true
-}];
+    multi: true }];

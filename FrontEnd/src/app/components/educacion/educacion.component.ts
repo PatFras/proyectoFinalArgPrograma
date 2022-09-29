@@ -18,24 +18,27 @@ export class EducacionComponent implements OnInit {
     this.cargarEducacion();
     if(this.tokenService.getToken()){
       this.isLogged = true;
-    }else{
+    } else {
       this.isLogged = false;
     }
   }
 
-  cargarEducacion(): void {
-    this.educacionS.lista().subscribe(data =>{
-      this.educacion = data;
-    })
+  cargarEducacion(): void{
+    this.educacionS.lista().subscribe(
+      data =>{
+        this.educacion = data;
+      }
+    )
   }
 
   delete(id?: number){
-    if(id == undefined){
-      this.educacionS.delete(id).subscribe(data =>{
-        this.cargarEducacion();
-      }, err =>{
-        alert("No se pudo eliminar");
-      }
+    if( id != undefined){
+      this.educacionS.delete(id).subscribe(
+        data => {
+          this.cargarEducacion();
+        }, err => {
+          alert("No se pudo eliminar");
+        }
       )
     }
   }

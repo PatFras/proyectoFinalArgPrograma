@@ -17,15 +17,17 @@ export class NeweducacionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onCreate(): void {
+  onCreate(): void{
     const educacion = new Educacion(this.nombreE, this.descripcionE);
-    this.educacionS.save(educacion).subscribe(data => {
-      alert("Educación añadida correctamente");
-      this.router.navigate(['']);
-    }, error => {
-      alert("Falló");
-      this.router.navigate(['']);
-    }
+    this.educacionS.save(educacion).subscribe(
+      data =>{
+        alert("Educacion añadida correctamente");
+        this.router.navigate(['']);
+      }, err =>{
+        alert("falló");
+        this.router.navigate(['']);
+      }
     )
   }
+
 }

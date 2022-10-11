@@ -1,36 +1,32 @@
-package com.portfolio.pf.Entity;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.portfolio.pf.Dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.NotBlank;
 
-
-@Entity
-public class Persona {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+/**
+ *
+ * @author okpat
+ */
+public class dtoPersona {
     private int id;
     
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    @NotBlank
     private String nombre;
-    
-    @NotNull
-    @Size(min = 1, max = 255, message = "No cumple con la longitud")
+    @NotBlank    
     private String apellido;
-    
-    @NotNull
+    @NotBlank  
     private String descripcion;
-        
+    @NotBlank
     private String img;
 
-    public Persona() {
+    public dtoPersona() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
+    public dtoPersona(int id, String nombre, String apellido, String descripcion, String img) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
@@ -76,6 +72,6 @@ public class Persona {
     public void setImg(String img) {
         this.img = img;
     }
-
+    
     
 }

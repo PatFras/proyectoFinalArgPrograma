@@ -7,8 +7,8 @@
               <div class="rounded-top d-flex flex-row blackBanner">
                 <div class="ms-4 mt-5 d-flex flex-column cajaNombre">
                   <div class="col-lg-2">
-                    <button type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged">
-                        Editar persona
+                    <button type="button" class="btn btn-outline-primary btn-sm" routerLink="/editacercade/1" *ngIf="isLogged">
+                        Editar
                     </button>
                 </div>
                   <img src={{persona.img}}
@@ -24,6 +24,7 @@
               <div class="card-body p-4 text-black">
                 <div class="mb-5">                
                   <div class="p-4 backgroundDos">
+                    <br>
                     <p>{{persona.descripcion}}</p>                    
                   </div>
                 </div>              

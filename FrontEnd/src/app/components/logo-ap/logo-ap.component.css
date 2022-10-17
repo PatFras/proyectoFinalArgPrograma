@@ -2,14 +2,17 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
+    background: #FFFFFF;
 }
 
 .redes{
     align-items:center;
+    
 }
 
 #logoAp{
     width:150px;
+    background:#112f45;
 }
 
 img{
@@ -19,4 +22,12 @@ img{
 
 .btn{
     border-width: medium;
+}
+
+.boton{
+    color:#112f45;
+}
+
+.boton:hover{
+    border-color: #112f45;
 }

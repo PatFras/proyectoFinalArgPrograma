@@ -26,13 +26,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-<<<<<<< HEAD
-@RequestMapping("/explab")
-@CrossOrigin(origins = {"http://localhost:4200","https://frontendpmf.web.app"})
-=======
 @RequestMapping("explab")
-@CrossOrigin(origins = "http://localhost:4200")
->>>>>>> parent of 20e93ce (deploy)
+@CrossOrigin(origins = {"https://frontendpmf.web.app","http://localhost:4200"})
+
 
 public class CExperiencia {
     @Autowired

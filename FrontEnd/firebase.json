@@ -1,5 +1,16 @@
 {
     "hosting": {
-    "public": "public"
-   }
- }
+      "public": "dist/proyecto-final-arg-programa",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  }

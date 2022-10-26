@@ -1,5 +1,6 @@
-.row{
+.contenedor{
     background:#112f45;
+    padding-bottom: 3em;
 }
 
 #titulo{
@@ -8,7 +9,8 @@
     color:#FFFFFF;
 }
 
-.contenedor{
+.caja{
+    display: contents;
     width:auto;
     margin-top:2em;
     margin-bottom: 3.5em;
@@ -17,10 +19,20 @@
     color:#FFFFFF;
 }
 
-.parte1, .parte2{
-    display: inline-block;
+.parte1{
+    margin-top: 8em;
+}
+
+.parte2{
+    margin-top: 2em;
 }
 
 .img-proyecto{
     box-shadow: 10px 10px 30px #000000;
+}
+
+@media screen and (max-width:600px) {
+    .parte1{
+        margin-top:3em;
+    }
 }

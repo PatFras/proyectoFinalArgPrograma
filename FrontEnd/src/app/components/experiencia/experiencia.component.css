@@ -12,3 +12,13 @@
     vertical-align: middle;
     text-align: center;
 }
+
+.nombre{
+    padding-left:7em;
+}
+
+@media screen and (max-width:600px){
+    .nombre{
+        padding-left:0em;
+    }    
+}

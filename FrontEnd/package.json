@@ -24,7 +24,7 @@
     "@popperjs/core": "^2.10.2",
     "angular-animations": "^0.11.0",
     "bootstrap": "^5.2.0",
-    "firebase": "^9.11.0",
+    "firebase": "^9.23.0",
     "jquery": "^3.6.1",
     "loader-utils": "^3.2.1",
     "ng-circle-progress": "^1.6.0",

@@ -1,0 +1,7 @@
+FROM nginx:1.21.6-alpine
+
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY ./dist/proyecto-final-arg-programa /usr/share/nginx/html
+
+EXPOSE 80

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  angular:
+    image: angular
+    ports:
+      - 80:80
+
+  springboot:
+    image: springboot
+    ports:
+      - 8080:8080

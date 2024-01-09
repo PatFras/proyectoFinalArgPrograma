@@ -14,8 +14,9 @@
     <name>pf</name>
     <description>Portfolio de Patricio Frascaroli</description>
     <properties>
-        <java.version>17</java.version>
-        
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -43,11 +44,11 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-    <groupId>org.projectlombok</groupId>
+            <groupId>org.projectlombok</groupId>
     <artifactId>lombok</artifactId>
     <version>1.18.30</version>
     <scope>provided</scope>
-</dependency>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -67,24 +68,23 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
         </dependency>
-        <dependency>
-      <groupId>org.eclipse.jdt</groupId>
-      <artifactId>ecj</artifactId>
-      <version>3.36.0</version>
-    </dependency>
 
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-compiler-plugin</artifactId>
-  <version>3.12.1</version>
-  <configuration>
-    <release>17</release>
-  </configuration>
-</plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

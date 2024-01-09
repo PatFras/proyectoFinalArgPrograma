@@ -15,7 +15,7 @@
     <description>Portfolio de Patricio Frascaroli</description>
     <properties>
         <java.version>21.0.1</java.version>
-        <maven.compiler.release>21</maven.compiler.release>
+        
     </properties>
     <dependencies>
         <dependency>

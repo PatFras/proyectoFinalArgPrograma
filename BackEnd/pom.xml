@@ -67,20 +67,24 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
         </dependency>
+        <dependency>
+      <groupId>org.eclipse.jdt</groupId>
+      <artifactId>ecj</artifactId>
+      <version>3.36.0</version>
+    </dependency>
 
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.12.1</version>
-    <configuration>
-        <release>17</release>
-    </configuration>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.12.1</version>
+  <configuration>
+    <release>17</release>
+  </configuration>
 </plugin>
-
         </plugins>
     </build>
 

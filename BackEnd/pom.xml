@@ -13,9 +13,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>pf</name>
     <description>Portfolio de Patricio Frascaroli</description>
-    <properties>
-        <java.version>11</java.version>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -72,30 +69,18 @@
     <build>
         <plugins>
             <plugin>
+                
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>  
+                <version>3.8.1</version>
 
   
-<groupId>org.apache.maven.plugins</groupId>
-
-  
-<artifactId>maven-compiler-plugin</artifactId>
-
-  
-<version>3.8.1</version>
-
-  
-<configuration>
-
-    
-<release>11</release>
-
-    
-<excludes>
-
-      
-<exclude>**/lombok/*</exclude>
-    </excludes>
-  </configuration>
-</plugin>
+            <configuration>    
+                <excludes>      
+                    <exclude>**/lombok/*</exclude>
+                </excludes>
+            </configuration>
+            </plugin>
         </plugins>
     </build>
 

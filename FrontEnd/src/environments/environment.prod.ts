@@ -10,5 +10,5 @@ export const environment = {
     measurementId: 'G-7ZYQKPMEFC',
   },
   production: true,
-  URL: 'mysql://root:A4aGf1GEga3-D-Gb-g2bHaf6dDceH3Bh@roundhouse.proxy.rlwy.net:58731/railway'
+  URL: 'https://portfolio-patfras.koyeb.app/'
 };

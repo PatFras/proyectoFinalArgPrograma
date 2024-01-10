@@ -69,17 +69,28 @@
     <build>
         <plugins>
             <plugin>
-                
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>  
+                <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
-
-  
-            <configuration>    
-                <excludes>      
-                    <exclude>**/lombok/*</exclude>
-                </excludes>
-            </configuration>
+                <configuration>
+                    <excludes>
+                        <exclude>**/lombok/*</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>com.portfolio.pf.PfApplication</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
             </plugin>
         </plugins>
     </build>

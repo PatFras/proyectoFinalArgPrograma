@@ -10,5 +10,5 @@ export const environment = {
     measurementId: 'G-7ZYQKPMEFC',
   },
   production: true,
-  URL: 'https://portfolio-patfras.koyeb.app/backend'
+  URL: 'proyectofinalargprograma-production.up.railway.app'
 };

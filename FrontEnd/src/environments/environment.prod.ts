@@ -10,5 +10,5 @@ export const environment = {
     measurementId: 'G-7ZYQKPMEFC',
   },
   production: true,
-  URL: 'bwuhuvoawmfgzxrmiifu-mysql.services.clever-cloud.com'
+  URL: 'proyectofinalargprograma-production.up.railway.app'
 };

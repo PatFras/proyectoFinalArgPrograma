@@ -10,5 +10,5 @@ export const environment = {
     measurementId: 'G-7ZYQKPMEFC',
   },
   production: true,
-  URL: 'proyectofinalargprograma-production.up.railway.app'
+  URL: 'https://portfolio-production-31e3.up.railway.app'
 };
